@@ -1,25 +1,40 @@
 package main.java;
-public class Produto {
-    private String nome; // Nome do produto
-    private Double preco; // Preço do produto
 
-    // Getter para o nome do produto
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Produto {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String nome;
+    private double preco;
+
+    // Getters and setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }
 
-    // Setter para o nome do produto
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    // Getter para o preço do produto
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    // Setter para o preço do produto
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 }

@@ -1,5 +1,6 @@
+package main.java;
+
 import java.util.Scanner;
-import main.java;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+package main.java;
 public class Produto {
     private String nome; // Nome do produto
     private Double preco; // Preço do produto

@@ -1,6 +1,4 @@
-package dao;
-
-import model.Produto;
+package main.java;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
